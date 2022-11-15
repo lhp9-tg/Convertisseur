@@ -1,19 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convertisseur de devise</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Convertisseur de devises</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        header {
+            height: 18vh;
+            background-image: url(https://previews.123rf.com/images/aodaodaod/aodaodaod1307/aodaodaod130701356/21097459-one-dollar-bills-background.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            background-color: rgba(255, 255, 255, 0.728);
+            border: solid 1px rgba(128, 128, 128, 0.358);
+            padding: 1rem;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: white;
+            width: fit-content;
+            position: absolute;
+            top: 15%;
+            border: solid 1px grey;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.441);
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bi-arrow-left-right{
+            padding: 0 5px;
+            
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1 class="text-center">Convertisseur de devise</h1>
-    <div class="text-center">
-        <a class="btn btn-primary" href="euros.html">Euro</a>
-        <a class="btn btn-primary" href="dollars.html">Dollars</a>
-    </div>
+    <header>
+        <h1 class="">Convertisseur de devises</h1>
+        <h2> </h2>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Choisissez votre devise</h3>
+            <div class="convertion">
+                <a class="btn btn-outline-primary" href="euros.html"><i class="bi bi-currency-euro"></i>Euro</a>
+                <i class="bi bi-arrow-left-right"></i>
+                <a class="btn btn-outline-primary" href="dollars.html"><i class="bi bi-currency-dollar"></i>Dollars</a>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
-
-
